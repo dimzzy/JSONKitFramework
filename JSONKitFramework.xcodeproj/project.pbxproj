@@ -6,17 +6,49 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1F2C628F14ABC1D1006918F1 /* JSONKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F2C629014ABC1D1006918F1 /* Build configuration list for PBXAggregateTarget "JSONKit" */;
+			buildPhases = (
+				1F2C629614ABC1F4006918F1 /* ShellScript */,
+				1F2C629714ABC226006918F1 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = JSONKit;
+			productName = JSONKit;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1F2C628314ABC124006918F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2C628214ABC124006918F1 /* Foundation.framework */; };
-		1F2C628914ABC125006918F1 /* JSONKitFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C628814ABC125006918F1 /* JSONKitFramework.m */; };
+		1F2C629D14ABC338006918F1 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2C629A14ABC337006918F1 /* JSONKit.h */; };
+		1F2C629E14ABC338006918F1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C629B14ABC337006918F1 /* JSONKit.m */; };
+		1F2C629F14ABC36B006918F1 /* JSONKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F2C629A14ABC337006918F1 /* JSONKit.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F2C629714ABC226006918F1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${PRODUCT_NAME}.framework/Versions/A/Headers/";
+			dstSubfolderSpec = 0;
+			files = (
+				1F2C629F14ABC36B006918F1 /* JSONKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F2C627F14ABC124006918F1 /* libJSONKitFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSONKitFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2C628214ABC124006918F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1F2C628614ABC125006918F1 /* JSONKitFramework-Prefix.pch */ = {isa = PBXFileReference; path = "JSONKitFramework-Prefix.pch"; sourceTree = "<group>"; };
-		1F2C628714ABC125006918F1 /* JSONKitFramework.h */ = {isa = PBXFileReference; path = JSONKitFramework.h; sourceTree = "<group>"; };
-		1F2C628814ABC125006918F1 /* JSONKitFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONKitFramework.m; sourceTree = "<group>"; };
+		1F2C628614ABC125006918F1 /* JSONKitFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "JSONKitFramework-Prefix.pch"; path = "JSONKitFramework/JSONKitFramework-Prefix.pch"; sourceTree = "<group>"; };
+		1F2C629914ABC337006918F1 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		1F2C629A14ABC337006918F1 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		1F2C629B14ABC337006918F1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		1F2C629C14ABC337006918F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +66,8 @@
 		1F2C627414ABC124006918F1 = {
 			isa = PBXGroup;
 			children = (
-				1F2C628414ABC124006918F1 /* JSONKitFramework */,
+				1F2C629814ABC337006918F1 /* JSONKit */,
+				1F2C628614ABC125006918F1 /* JSONKitFramework-Prefix.pch */,
 				1F2C628114ABC124006918F1 /* Frameworks */,
 				1F2C628014ABC124006918F1 /* Products */,
 			);
@@ -56,22 +89,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1F2C628414ABC124006918F1 /* JSONKitFramework */ = {
+		1F2C629814ABC337006918F1 /* JSONKit */ = {
 			isa = PBXGroup;
 			children = (
-				1F2C628714ABC125006918F1 /* JSONKitFramework.h */,
-				1F2C628814ABC125006918F1 /* JSONKitFramework.m */,
-				1F2C628514ABC125006918F1 /* Supporting Files */,
+				1F2C629914ABC337006918F1 /* CHANGELOG.md */,
+				1F2C629A14ABC337006918F1 /* JSONKit.h */,
+				1F2C629B14ABC337006918F1 /* JSONKit.m */,
+				1F2C629C14ABC337006918F1 /* README.md */,
 			);
-			path = JSONKitFramework;
-			sourceTree = "<group>";
-		};
-		1F2C628514ABC125006918F1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F2C628614ABC125006918F1 /* JSONKitFramework-Prefix.pch */,
-			);
-			name = "Supporting Files";
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +107,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2C629D14ABC338006918F1 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,16 +152,33 @@
 			projectRoot = "";
 			targets = (
 				1F2C627E14ABC124006918F1 /* JSONKitFramework */,
+				1F2C628F14ABC1D1006918F1 /* JSONKit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F2C629614ABC1F4006918F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\" &&\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" &&\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\" &&\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}\" &&\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}.framework\" &&\n\n# Create framework directory structure.\nrm -rf \"${FRAMEWORK}\" &&\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Headers\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Resources\" &&\n\n# Generate universal binary for the device and simulator.\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\" &&\n\n# Move files to appropriate locations in framework paths.\ncp \"${UNIVERSAL_LIBRARY_PATH}\" \"${FRAMEWORK}/Versions/A\" &&\nln -s \"A\" \"${FRAMEWORK}/Versions/Current\" &&\nln -s \"Versions/Current/Headers\" \"${FRAMEWORK}/Headers\" &&\nln -s \"Versions/Current/Resources\" \"${FRAMEWORK}/Resources\" &&\nln -s \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK}/${PRODUCT_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F2C627B14ABC124006918F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F2C628914ABC125006918F1 /* JSONKitFramework.m in Sources */,
+				1F2C629E14ABC338006918F1 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +189,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					i386,
+					armv7,
+					armv6,
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -159,8 +207,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -168,15 +217,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = YES;
+				ARCHS = (
+					i386,
+					armv7,
+					armv6,
+				);
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -205,6 +259,20 @@
 			};
 			name = Release;
 		};
+		1F2C629114ABC1D1006918F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F2C629214ABC1D1006918F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -222,6 +290,14 @@
 			buildConfigurations = (
 				1F2C628D14ABC125006918F1 /* Debug */,
 				1F2C628E14ABC125006918F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F2C629014ABC1D1006918F1 /* Build configuration list for PBXAggregateTarget "JSONKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2C629114ABC1D1006918F1 /* Debug */,
+				1F2C629214ABC1D1006918F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
