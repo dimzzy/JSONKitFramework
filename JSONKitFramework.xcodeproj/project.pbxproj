@@ -137,7 +137,7 @@
 		1F2C627614ABC124006918F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 1F2C627914ABC124006918F1 /* Build configuration list for PBXProject "JSONKitFramework" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -292,6 +292,7 @@
 				1F2C628E14ABC125006918F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F2C629014ABC1D1006918F1 /* Build configuration list for PBXAggregateTarget "JSONKit" */ = {
 			isa = XCConfigurationList;
@@ -300,6 +301,7 @@
 				1F2C629214ABC1D1006918F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
